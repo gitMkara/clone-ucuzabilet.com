@@ -1,0 +1,10 @@
+.large-img {
+  max-width: 660px;
+  height: 460px;
+  padding: 10px;
+}
+.small-img {
+  max-width: 560px;
+  max-height: 230px;
+  padding: 10px;
+}

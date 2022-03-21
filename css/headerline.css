@@ -1,0 +1,7 @@
+#headerline ul {
+  list-style-type: '/ ';
+}
+
+#headerline ul li:first-child {
+  list-style: none;
+}

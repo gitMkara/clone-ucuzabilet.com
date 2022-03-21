@@ -1,0 +1,7 @@
+#link-tree ul {
+  list-style-type: '/ ';
+}
+
+#link-tree ul li:first-child {
+  list-style: none;
+}

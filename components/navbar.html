@@ -1,5 +1,8 @@
 <header id="navbar">
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fw-light">
+  <nav
+    class="navbar navbar-expand-md navbar-dark fw-light fixed-top"
+    style="background-color: rgb(60, 58, 58)"
+  >
     <div class="container">
       <a class="navbar-brand" href="#"
         ><img
@@ -30,7 +33,7 @@
           </li>
         </ul>
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+          <li class="nav-item d-flex align-items-center justify-content-center">
             <a class="nav-link" href="#"
               ><span
                 ><svg
@@ -52,6 +55,15 @@
             >
           </li>
           <li class="nav-item">
+            <a
+              class="nav-link"
+              data-bs-toggle="modal"
+              data-bs-target="#rezarvasyonModal"
+              href="#"
+              >Rezarvasyonlarım</a
+            >
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#"
               ><span
                 ><svg
@@ -70,19 +82,131 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a
+              class="nav-link"
+              data-bs-toggle="modal"
+              data-bs-target="#signinModal"
+              href="#"
+              >Üye Ol</a
+            >
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+          <li class="nav-item" style="border-right: 1px solid rgb(97, 94, 94)">
+            <a
+              class="nav-link"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+              href="#"
+              >Giriş</a
+            >
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+          <li
+            class="nav-item d-flex flex-column fw-bold justify-content-center ms-2"
+          >
+            <div class="dropdown">
+              <a
+                href="#"
+                data-bs-toggle="dropdown"
+                class="text-decoration-none text-light"
+                >TR</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">TR</a></li>
+                <li><a class="dropdown-item" href="#">ENG</a></li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="rezarvasyonModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Rezarvasyonlarım</h5>
+        </div>
+        <div class="modal-body">
+          <div class="input-group input-group-md">
+            <input type="text" class="form-control" placeholder="PNR No" />
+          </div>
+          <div class="input-group input-group-md mt-3">
+            <input type="text" class="form-control" placeholder="Soyisim" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning w-100">ARA</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="signinModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Üye ol</h5>
+        </div>
+        <div class="modal-body">
+          <div class="input-group input-group-md">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Kullanıcı Adı"
+            />
+          </div>
+          <div class="input-group input-group-md mt-3">
+            <input type="email" class="form-control" placeholder="E-mail" />
+          </div>
+          <div class="input-group input-group-md mt-3">
+            <input type="password" class="form-control" placeholder="Şifre" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success w-100">Kayıt Ol</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="loginModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Giriş</h5>
+        </div>
+        <div class="modal-body">
+          <div class="input-group input-group-md">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Kullanıcı Adı"
+            />
+          </div>
+          <div class="input-group input-group-md mt-3">
+            <input type="password" class="form-control" placeholder="Şifre" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning w-100">Giriş Yap</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>

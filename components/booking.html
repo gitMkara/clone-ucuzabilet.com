@@ -1,64 +1,68 @@
 <script src="./js/booking.js"></script>
 <link rel="stylesheet" href="../css/booking.css" />
 <div id="booking" class="container">
-  <div class="row">
-    <div class="col">
-      <table class="table table-bordered">
-        <tr>
-          <td>
-            <div class="input-group input-group-lg">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Otel, Şehir, Bölge"
-              />
-            </div>
-          </td>
-          <td class="col-2">
-            <label for="checkIn" id="checkIn_label" style="cursor: pointer"
-              ><div class="row">
-                <div class="col">
-                  <span class="checkInDay"></span>
-                </div>
-                <div class="col">
-                  <span class="checkInMonth"></span>
-                  <span class="checkInYear"></span>
-                </div>
-              </div> </label
-            ><input style="opacity: 0; width: 0" id="checkIn" />
-          </td>
-          <td class="col-3">
-            <label for="checkOut" id="checkIn_label" style="cursor: pointer"
-              ><div class="row">
-                <div class="col">
-                  <span class="checkOutDay"></span>
-                </div>
-                <div class="col">
-                  <span class="checkOutMonth"></span>
-                  <span class="checkOutYear"></span>
-                </div>
-                <div class="col"><span class="numberOfNight">1</span> Gece</div>
-              </div> </label
-            ><input style="opacity: 0; width: 0" id="checkOut" />
-          </td>
-          <td class="col-2">
-            <a
-              data-bs-toggle="collapse"
-              href="#collapseExample"
-              role="button"
-              aria-expanded="false"
-              aria-controls="collapseExample"
-            >
-              1 Oda, <span class="visitor">1</span> Kişi
-            </a>
-            <button class="btn btn-warning">ARA</button>
-          </td>
-        </tr>
-      </table>
+  <div class="row d-flex justify-content-sm-between">
+    <!-- input box -->
+    <div class="col d-flex justify-content-center align-items-center border">
+      <div class="input-group input-group-lg">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Otel, Şehir, Bölge"
+        />
+      </div>
     </div>
+    <!-- input box -->
+    <!-- CheckIn -->
+    <div
+      class="col text-center d-flex justify-content-center align-items-center border"
+    >
+      <label for="checkIn" id="checkIn_label" style="cursor: pointer">
+        <span class="checkInDay fw-bold"></span>
+        <span class="checkInMonth fw-bold"></span>
+        <span class="checkInYear fw-bold"></span> </label
+      ><input style="opacity: 0; width: 0" id="checkIn" />
+    </div>
+    <!-- CheckIn -->
+    <!-- CheckOut -->
+    <div
+      class="col text-center d-flex justify-content-center align-items-center border"
+    >
+      <label for="checkOut" id="checkOut_label" style="cursor: pointer">
+        <span class="checkOutDay fw-bold"></span>
+        <span class="checkOutMonth fw-bold"></span>
+        <span class="checkOutYear fw-bold"></span> </label
+      ><input style="opacity: 0; width: 0" id="checkOut" />
+    </div>
+
+    <div
+      class="col d-flex text-warning bg-primary justify-content-center align-items-center border"
+    >
+      <span class="numberOfNight me-2">1</span> <span>Gece</span>
+    </div>
+    <!-- CheckOut -->
+    <!-- Buttons -->
+    <div
+      class="col text-center d-flex justify-content-center align-items-center border flex-sm-column flex-lg-row"
+    >
+      <a
+        data-bs-toggle="collapse"
+        href="#collapseExample"
+        role="button"
+        aria-expanded="false"
+        aria-controls="collapseExample"
+      >
+        1 Oda, <span class="visitor">1</span> Kişi
+      </a>
+      <button class="ms-2 btn btn-warning">ARA</button>
+    </div>
+    <!-- Buttons -->
   </div>
-  <div class="col-2 float-end collapse" id="collapseExample">
-    <div class="card card-body d-flex flex-row">
+  <div
+    class="col-2 float-end collapse me-sm-5 me-md-0 border"
+    id="collapseExample"
+  >
+    <div class="card card-body d-flex flex-lg-row flex-sm-column">
       Kişi Sayısı
       <span
         class="fs-3 mx-2 bg-warning rounded-circle text-center d-flex flex-column justify-content-center align-items-center minus"

@@ -1,8 +1,30 @@
+<script src="../js/hotel-comment.js"></script>
 <div id="hotel-comment" class="container">
   <div class="row">
     <div class="col fs-4 mb-3 mt-4" id="hotelComments">Yorumlar</div>
   </div>
   <div class="row">
-    <div class="col border">yorumlar</div>
+    <div class="col-9 border">
+      <div class="row">
+        <div
+          class="col-lg-3 col-6 col-md-4 d-flex flex-row me-5 align-items-center"
+        >
+          <div class="col">
+            <span
+              id="averagePuan"
+              class="fw-bold fs-3 text-light bg-primary p-2 rounded-3"
+            ></span>
+          </div>
+          <div
+            class="col d-flex flex-column text-light bg-primary p-1 rounded-3 align-items-center"
+          >
+            <span id="averageDegree" class="fw-bold"></span>
+            <span id="numberOfComment"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row"></div>
+      <div class="row d-flex flex-column" id="commentBlock"></div>
+    </div>
   </div>
 </div>

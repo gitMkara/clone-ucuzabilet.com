@@ -12,4 +12,5 @@ $(document).ready(function () {
   $('.hotel-info_wrapper').load('../components/hotel-info.html');
   $('.hotel-comment_wrapper').load('../components/hotel-comment.html');
   $('.extra-links_wrapper').load('../components/extra-links.html');
+  $('.hotel-rooms_wrapper').load('../components/hotel-rooms.html');
 });

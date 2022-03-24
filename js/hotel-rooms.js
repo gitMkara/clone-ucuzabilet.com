@@ -37,15 +37,16 @@ $(document).ready(() => {
     <img src="${key.img[0]}" alt="" width="200px" height="160px" />
   </div>
   <div class="col d-lg-none w-100"></div>
-  <div class="col-6 d-flex flex-column justify-content-center">
+  <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-item-center">
     <span class="fw-bold text-primary">${key.name}</span>
     <span>${key.area}</span>
+    
     <a href="" data-bs-toggle="modal" data-bs-target="#modal${index}"
       >Tüm Özellikler ve Fotoğraflar</a
     >
   </div>
   <div
-    class="col-3 d-flex flex-column justify-content-center align-items-center bg-light rounded-3"
+    class="col-12 col-lg-3 d-flex flex-column mt-3 mt-md-0 justify-content-center align-items-center bg-light rounded-3"
   >
     <span>Fiyatlar İçin Tarih girin!</span>
     <button type="button" class="btn btn-warning" style="width: 120px">
@@ -76,7 +77,7 @@ $(document).ready(() => {
       <div class="modal-body">
         <div class="container-flud">
           <div class="row">
-            <div class="col-6">
+            <div class="col-12">
               <div
                 id="carouselExampleControls${index}"
                 class="carousel slide"

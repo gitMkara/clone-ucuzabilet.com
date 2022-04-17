@@ -2,6 +2,6 @@
 
 ## Kullanılan Teknolojiler:
 
-> HTML, CSS JQUERY, BOOTSTRAP.
+> HTML, CSS JQUERY, BOOTSTRAP..
 
 > AWS HOST LINK: https://master.d1xhjwfnc5woef.amplifyapp.com/

@@ -1,4 +1,4 @@
-### This is a study to clone [ucuzabilet.com](ucuzabilet.com)
+### This is a study to clone [ucuzabilet.com](https://www.ucuzabilet.com/?target=_blank)
 
 ### Technologies used in this project
 

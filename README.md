@@ -1,7 +1,7 @@
-## ETSTUR şirketi tarafından gönderilen "use-case" kuralları çerçevesinde hazırlanmıştır.
+### This is a study to clone [ucuzabilet.com](ucuzabilet.com)
 
-## Kullanılan Teknolojiler:
+### Technologies used in this project
 
-> HTML, CSS JQUERY, BOOTSTRAP..
+> AWS Amplify, HTML, CSS, JQUERY, BOOTSTRAP..
 
-> AWS HOST LINK: https://master.d1xhjwfnc5woef.amplifyapp.com/
+> AWS Amplif LINK: https://master.d1xhjwfnc5woef.amplifyapp.com/ (deprecated)
